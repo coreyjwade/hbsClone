@@ -25,6 +25,7 @@ class TimeViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let segueController = segue.destination as! SecondsViewController
+//        let segueController = segue.destination as! MasterViewController
         let tComponents = Calendar.current.dateComponents([.hour, .minute], from: timePicker.date)
         var birthDateComponents = Calendar.current.dateComponents([.year, .month, .day], from: birthDayDateOnly)
         birthDate.year = birthDateComponents.year
