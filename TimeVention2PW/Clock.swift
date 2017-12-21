@@ -155,6 +155,7 @@ class PlanetaryClock: Clock {
         let planetOrbit = planetOrbitSeconds(date: date, planet: planet)
         return earthSeconds / planetOrbit
     }
+    //change to enum:
     
     // determines number of decimal places so clock visually updates every tenth of a second
     func decimalPlacesAge (planet: String) -> Int {
