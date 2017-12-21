@@ -27,7 +27,14 @@ class Clock {
 
 //StandardClock included built-in Apple Methods for the standard units of time
 class StandardClock : Clock {
-        
+    
+    let numberFormatter = NumberFormatter()
+    
+    override init(date: Date) {
+        super.init(date: date)
+        numberFormatter.numberStyle = NumberFormatter.Style.decimal
+    }
+    
     //returns total units in time interval as Date Component (reads like an Int)
     func totalUnits (date: Date, unit: Calendar.Component) -> DateComponents {
         let totalUnits = Calendar.current.dateComponents([unit], from: date, to: now)
@@ -70,30 +77,30 @@ class StandardClock : Clock {
         var totalUnits = self.totalUnits(date: date, unit: unit)
         var units: Double
         switch unit {
-        case .minute: units = Double(Int(totalUnits.minute!))
-        case .hour: units = Double(Int(totalUnits.hour!))
-        case .day: units = Double(Int(totalUnits.day!))
-        case .weekOfYear: units = Double(Int(totalUnits.weekOfYear!))
-        case .month: units = Double(Int(totalUnits.month!))
-        case .year: units = Double(Int(totalUnits.year!))
+        case .minute: units = Double(totalUnits.minute!)
+        case .hour: units = Double(totalUnits.hour!)
+        case .day: units = Double(totalUnits.day!)
+        case .weekOfYear: units = Double(totalUnits.weekOfYear!)
+        case .month: units = Double(totalUnits.month!)
+        case .year: units = Double(totalUnits.year!)
         default: units = 0
         }
         return units
     }
     
     //converts units into decimal representation for display
-    func decimalValue (date: Date, unit: Calendar.Component) -> Double {
+    func decimalValue(date: Date, unit: Calendar.Component) -> Double {
         let units = self.units(date: date, unit: unit)
         let totalSeconds = self.totalSeconds(date: date)
         let divisor = self.divisor(unit: unit)
-        let transferSeconds = totalSeconds - units*divisor
-        let remainderUnits = transferSeconds/divisor
+        let transferSeconds = totalSeconds - units * divisor
+        let remainderUnits = transferSeconds / divisor
         let decimalValue = units + remainderUnits
         return decimalValue
     }
     
     //Provides Clock Label
-    func label (unit: Calendar.Component) -> String {
+    func label(unit: Calendar.Component) -> String {
         var label: String
         switch unit {
         case .second: label = "Earth Seconds"
@@ -109,8 +116,6 @@ class StandardClock : Clock {
     }
     
     func numberFormatter (date: Date, unit: Calendar.Component) -> String {
-        let numberFormatter = NumberFormatter()
-        numberFormatter.numberStyle = NumberFormatter.Style.decimal
         numberFormatter.maximumFractionDigits = self.decimalPlaces(unit: unit)
         numberFormatter.minimumFractionDigits = self.decimalPlaces(unit: unit)
         let decimalValue = self.decimalValue(date: date, unit: unit)
@@ -120,30 +125,35 @@ class StandardClock : Clock {
     
 }
 
+enum Planets {
+    case mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto
+}
+
+
 class PlanetaryClock: Clock {
     
     //Planet Orbits in Number of Seconds
-    func planetOrbitSeconds (date: Date, planet: String) -> Double {
+    private func planetOrbitSeconds (date: Date, planet: Planets) -> Double {
         var orbit: Double
             switch planet {
-            case "Mercury": orbit = 7603200
-            case "Venus": orbit = 19414080
-            case "Mars": orbit = 59356800
-            case "Jupiter": orbit = 374198400
-            case "Saturn": orbit = 928540800
-            case "Uranus": orbit = 2642889600
-            case "Neptune": orbit = 5166720000
-            case "Pluto": orbit = 7824384000
-            default: orbit = 31536000 //This is Earth
+            case .mercury: orbit = 7603200
+            case .venus: orbit = 19414080
+            case .mars: orbit = 59356800
+            case .jupiter: orbit = 374198400
+            case .saturn: orbit = 928540800
+            case .uranus: orbit = 2642889600
+            case .neptune: orbit = 5166720000
+            case .pluto: orbit = 7824384000
+            case .earth: orbit = 31536000
             }
             return orbit
         }
     
     // Converts to Age (in Years) on Planet
-    func ageOnPlanet (date: Date, planet: String) -> Double {
+    func ageOnPlanet (date: Date, planet: Planets) -> Double {
         let earthSeconds = self.totalSeconds(date: date)
         let planetOrbit = planetOrbitSeconds(date: date, planet: planet)
-        return earthSeconds/planetOrbit
+        return earthSeconds / planetOrbit
     }
     
     // determines number of decimal places so clock visually updates every tenth of a second
