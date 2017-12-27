@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -90,7 +95,7 @@
                                 <rect key="frame" x="172.5" y="442" width="30" height="30"/>
                                 <state key="normal" title="Go"/>
                                 <connections>
-                                    <segue destination="soP-TV-3Fu" kind="show" id="XQS-Fo-Mtk"/>
+                                    <segue destination="lwp-aA-DTE" kind="show" id="d48-od-Rsc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -181,7 +186,46 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="719" y="-1525"/>
+            <point key="canvasLocation" x="1247" y="-1652"/>
+        </scene>
+        <!--Master View Controller-->
+        <scene sceneID="HHx-pL-LsW">
+            <objects>
+                <viewController id="lwp-aA-DTE" customClass="MasterViewController" customModule="TimeVention2PW" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u0b-wM-CLV"/>
+                        <viewControllerLayoutGuide type="bottom" id="y9O-6K-UpW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gkc-8Y-jod">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQT-Ov-a0k">
+                                <rect key="frame" x="52" y="301" width="271" height="65"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="123456789">
+                                        <attributes>
+                                            <font key="NSFont" size="54" name="Optima-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eQT-Ov-a0k" firstAttribute="centerY" secondItem="gkc-8Y-jod" secondAttribute="centerY" id="OeF-UD-8pM"/>
+                            <constraint firstItem="eQT-Ov-a0k" firstAttribute="centerX" secondItem="gkc-8Y-jod" secondAttribute="centerX" id="l1a-3F-Kgx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="eQT-Ov-a0k" id="AgK-hr-yzx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M71-QU-hoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="400.80000000000001" y="-1003.4482758620691"/>
         </scene>
         <!--Seconds View Controller-->
         <scene sceneID="Yeo-h9-xNL">
@@ -245,7 +289,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="330" y="-1003"/>
+            <point key="canvasLocation" x="1065" y="-1003"/>
         </scene>
         <!--Minutes View Controller-->
         <scene sceneID="GDe-Yg-XxZ">

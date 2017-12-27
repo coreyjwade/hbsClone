@@ -12,6 +12,8 @@ var userDate = Date()
 var userClock = StandardClock(date: userDate)
 
 class MasterViewController: UIViewController {
+
+    var userDate = Date()
     var unit = Calendar.Component.second
     @IBOutlet weak var label: UILabel!
     

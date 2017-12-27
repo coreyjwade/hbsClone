@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Mfk-DQ-QM0">
+            <objects>
+                <viewController id="55R-fW-fWW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gkK-5q-FgV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6IC-pq-sYc">
+                                <rect key="frame" x="27" y="226" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="536023071.83291799">
+                                    <!--2017-12-26 23:17:51 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePicker:" destination="3MX-CW-pu7" eventType="valueChanged" id="1CU-Dt-iNZ"/>
+                                    <segue destination="55R-fW-fWW" kind="show" id="lww-Px-O29"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6IC-pq-sYc" firstAttribute="centerY" secondItem="gkK-5q-FgV" secondAttribute="centerY" id="Mmp-3F-hwe"/>
+                            <constraint firstItem="6IC-pq-sYc" firstAttribute="centerX" secondItem="gkK-5q-FgV" secondAttribute="centerX" id="u9W-qu-zJY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gao-eI-Mrr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJg-TC-Z3V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="3MX-CW-pu7" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-410" y="124"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufw-4O-xNm">
+            <objects>
+                <viewController id="cqA-ht-qsU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3mU-zk-cEj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="24w-ZJ-dfQ">
+                                <rect key="frame" x="27" y="226" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="536023223.42624098">
+                                    <!--2017-12-26 23:20:23 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="24w-ZJ-dfQ" firstAttribute="centerX" secondItem="3mU-zk-cEj" secondAttribute="centerX" id="BAH-vm-zuZ"/>
+                            <constraint firstItem="24w-ZJ-dfQ" firstAttribute="centerY" secondItem="3mU-zk-cEj" secondAttribute="centerY" id="Ude-z0-gHV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mtc-Kh-JLH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vng-ub-RTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277" y="122"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xu1-uL-2eg">
+            <objects>
+                <viewController id="qdC-Fa-q3S" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ybn-pb-yWx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Soy-SN-dTa">
+                                <rect key="frame" x="141" y="310" width="94" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secondary Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ao-ZW-Hfa">
+                                <rect key="frame" x="123.5" y="281" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Soy-SN-dTa" firstAttribute="centerY" secondItem="Ybn-pb-yWx" secondAttribute="centerY" id="5Om-aH-u1g"/>
+                            <constraint firstItem="Soy-SN-dTa" firstAttribute="top" secondItem="9ao-ZW-Hfa" secondAttribute="bottom" constant="8" id="AQ0-nd-mzC"/>
+                            <constraint firstItem="9ao-ZW-Hfa" firstAttribute="centerX" secondItem="Ybn-pb-yWx" secondAttribute="centerX" id="MPJ-cA-4x7"/>
+                            <constraint firstItem="Soy-SN-dTa" firstAttribute="centerX" secondItem="Ybn-pb-yWx" secondAttribute="centerX" id="bd5-fE-2cn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mlY-6g-dLv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4YR-xV-Jdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984.79999999999995" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+</document>

@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		100F8F2A1FE821D30093CD08 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100F8F291FE821D30093CD08 /* Clock.swift */; };
 		1027087B1FE9E8F200C15A5D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1027087A1FE9E8F200C15A5D /* MasterViewController.swift */; };
+		104D67221FECE62900332275 /* DecimalClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D67211FECE62800332275 /* DecimalClock.swift */; };
+		104D67261FECE6EF00332275 /* PlanetClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D67251FECE6EF00332275 /* PlanetClock.swift */; };
+		104D67281FECE72200332275 /* ExoplanetClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D67271FECE72200332275 /* ExoplanetClock.swift */; };
+		104D672A1FECE7C200332275 /* StandardClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D67291FECE7C200332275 /* StandardClock.swift */; };
+		104D67321FF30FBC00332275 /* not.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104D67311FF30FBC00332275 /* not.storyboard */; };
 		10DE64D91F322A5F000A4BA0 /* MercuryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE64D81F322A5F000A4BA0 /* MercuryViewController.swift */; };
 		10DE64DB1F322A71000A4BA0 /* VenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE64DA1F322A71000A4BA0 /* VenusViewController.swift */; };
 		10DE64DD1F322A7B000A4BA0 /* MarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE64DC1F322A7B000A4BA0 /* MarsViewController.swift */; };
@@ -41,13 +46,6 @@
 			remoteGlobalIDString = 106C86061F37A2E100971022;
 			remoteInfo = "TimeVention2PWWatch Extension";
 		};
-		106C86171F37A2E100971022 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 10E318A21F2A9A3F0052228E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 106C85FA1F37A2E000971022;
-			remoteInfo = TimeVention2PWWatch;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,9 +74,14 @@
 /* Begin PBXFileReference section */
 		100F8F291FE821D30093CD08 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 		1027087A1FE9E8F200C15A5D /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		10D601731FE6CF40003B4D40 /* TimeVention2PW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeVention2PW.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		10D601741FE6CF40003B4D40 /* TimeVention2PWWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeVention2PWWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		10D601751FE6CF40003B4D40 /* TimeVention2PWWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TimeVention2PWWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		104D67211FECE62800332275 /* DecimalClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalClock.swift; sourceTree = "<group>"; };
+		104D67251FECE6EF00332275 /* PlanetClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetClock.swift; sourceTree = "<group>"; };
+		104D67271FECE72200332275 /* ExoplanetClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExoplanetClock.swift; sourceTree = "<group>"; };
+		104D67291FECE7C200332275 /* StandardClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardClock.swift; sourceTree = "<group>"; };
+		104D67311FF30FBC00332275 /* not.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = not.storyboard; sourceTree = "<group>"; };
+		104D67331FF3828E00332275 /* TimeVention2PW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeVention2PW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10D601741FE6CF40003B4D40 /* TimeVention2PWWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TimeVention2PWWatch.app; path = "/Users/coreyjwade/Desktop/Coding/HBSNew/build/Debug-watchos/TimeVention2PWWatch.app"; sourceTree = "<absolute>"; };
+		10D601751FE6CF40003B4D40 /* TimeVention2PWWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; name = "TimeVention2PWWatch Extension.appex"; path = "/Users/coreyjwade/Desktop/Coding/HBSNew/build/Debug-watchos/TimeVention2PWWatch Extension.appex"; sourceTree = "<absolute>"; };
 		10DE64D81F322A5F000A4BA0 /* MercuryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MercuryViewController.swift; sourceTree = "<group>"; };
 		10DE64DA1F322A71000A4BA0 /* VenusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenusViewController.swift; sourceTree = "<group>"; };
 		10DE64DC1F322A7B000A4BA0 /* MarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarsViewController.swift; sourceTree = "<group>"; };
@@ -122,32 +125,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10E318A11F2A9A3F0052228E = {
+		104D672B1FF30E1500332275 /* Old */ = {
 			isa = PBXGroup;
 			children = (
-				10E318AC1F2A9A3F0052228E /* TimeVention2PW */,
-				10D601731FE6CF40003B4D40 /* TimeVention2PW.app */,
-				10D601741FE6CF40003B4D40 /* TimeVention2PWWatch.app */,
-				10D601751FE6CF40003B4D40 /* TimeVention2PWWatch Extension.appex */,
-			);
-			sourceTree = "<group>";
-		};
-		10E318AC1F2A9A3F0052228E /* TimeVention2PW */ = {
-			isa = PBXGroup;
-			children = (
-				10E318AD1F2A9A3F0052228E /* AppDelegate.swift */,
-				100F8F291FE821D30093CD08 /* Clock.swift */,
-				10E318AF1F2A9A3F0052228E /* ViewController.swift */,
-				10E318C21F2AB4D30052228E /* TimeViewController.swift */,
-				1027087A1FE9E8F200C15A5D /* MasterViewController.swift */,
-				10E318C41F2AB4ED0052228E /* SecondsViewController.swift */,
-				10E318C61F2AB4FB0052228E /* MinutesViewController.swift */,
-				10E318C81F2AB5040052228E /* HoursViewController.swift */,
 				10E318CA1F2AB5130052228E /* DaysViewController.swift */,
-				10E318CC1F2AB5200052228E /* WeeksViewController.swift */,
-				10E318CE1F2AB5280052228E /* MonthsViewController.swift */,
-				10E318D01F2AB5330052228E /* YearsViewController.swift */,
-				10E318B11F2A9A3F0052228E /* Main.storyboard */,
+				10E318C41F2AB4ED0052228E /* SecondsViewController.swift */,
 				10DE64D81F322A5F000A4BA0 /* MercuryViewController.swift */,
 				10DE64DA1F322A71000A4BA0 /* VenusViewController.swift */,
 				10DE64DC1F322A7B000A4BA0 /* MarsViewController.swift */,
@@ -155,7 +137,39 @@
 				10DE64E01F322DA8000A4BA0 /* SaturnViewController.swift */,
 				10DE64E21F322DB6000A4BA0 /* UranusViewController.swift */,
 				10DE64E41F322DC2000A4BA0 /* NeptuneViewController.swift */,
+				104D67311FF30FBC00332275 /* not.storyboard */,
 				10DE64E61F322DCC000A4BA0 /* PlutoViewController.swift */,
+				10E318CC1F2AB5200052228E /* WeeksViewController.swift */,
+				10E318C81F2AB5040052228E /* HoursViewController.swift */,
+				10E318CE1F2AB5280052228E /* MonthsViewController.swift */,
+				10E318D01F2AB5330052228E /* YearsViewController.swift */,
+			);
+			path = Old;
+			sourceTree = "<group>";
+		};
+		10E318A11F2A9A3F0052228E = {
+			isa = PBXGroup;
+			children = (
+				10E318AC1F2A9A3F0052228E /* TimeVention2PW */,
+				104D67331FF3828E00332275 /* TimeVention2PW.app */,
+			);
+			sourceTree = "<group>";
+		};
+		10E318AC1F2A9A3F0052228E /* TimeVention2PW */ = {
+			isa = PBXGroup;
+			children = (
+				104D672B1FF30E1500332275 /* Old */,
+				10E318AD1F2A9A3F0052228E /* AppDelegate.swift */,
+				10E318B11F2A9A3F0052228E /* Main.storyboard */,
+				10E318C61F2AB4FB0052228E /* MinutesViewController.swift */,
+				10E318AF1F2A9A3F0052228E /* ViewController.swift */,
+				10E318C21F2AB4D30052228E /* TimeViewController.swift */,
+				1027087A1FE9E8F200C15A5D /* MasterViewController.swift */,
+				100F8F291FE821D30093CD08 /* Clock.swift */,
+				104D67211FECE62800332275 /* DecimalClock.swift */,
+				104D67291FECE7C200332275 /* StandardClock.swift */,
+				104D67251FECE6EF00332275 /* PlanetClock.swift */,
+				104D67271FECE72200332275 /* ExoplanetClock.swift */,
 				10E318B71F2A9A3F0052228E /* Assets.xcassets */,
 				10E318B91F2A9A3F0052228E /* LaunchScreen.storyboard */,
 				10E318BC1F2A9A3F0052228E /* Info.plist */,
@@ -213,11 +227,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				106C86181F37A2E100971022 /* PBXTargetDependency */,
 			);
 			name = TimeVention2PW;
 			productName = TimeVention2PW;
-			productReference = 10D601731FE6CF40003B4D40 /* TimeVention2PW.app */;
+			productReference = 104D67331FF3828E00332275 /* TimeVention2PW.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -242,6 +255,7 @@
 					};
 					10E318A91F2A9A3F0052228E = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = JE9SL2E9G9;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
@@ -289,6 +303,7 @@
 				10E318BB1F2A9A3F0052228E /* LaunchScreen.storyboard in Resources */,
 				10E318B81F2A9A3F0052228E /* Assets.xcassets in Resources */,
 				10E318B31F2A9A3F0052228E /* Main.storyboard in Resources */,
+				104D67321FF30FBC00332275 /* not.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +325,7 @@
 				10DE64E31F322DB6000A4BA0 /* UranusViewController.swift in Sources */,
 				10DE64E11F322DA8000A4BA0 /* SaturnViewController.swift in Sources */,
 				10E318B61F2A9A3F0052228E /* TimeVention2PW.xcdatamodeld in Sources */,
+				104D67261FECE6EF00332275 /* PlanetClock.swift in Sources */,
 				10E318C31F2AB4D30052228E /* TimeViewController.swift in Sources */,
 				10DE64DF1F322A85000A4BA0 /* JupiterViewController.swift in Sources */,
 				10E318D11F2AB5330052228E /* YearsViewController.swift in Sources */,
@@ -324,6 +340,9 @@
 				100F8F2A1FE821D30093CD08 /* Clock.swift in Sources */,
 				10DE64DD1F322A7B000A4BA0 /* MarsViewController.swift in Sources */,
 				10E318C51F2AB4ED0052228E /* SecondsViewController.swift in Sources */,
+				104D672A1FECE7C200332275 /* StandardClock.swift in Sources */,
+				104D67221FECE62900332275 /* DecimalClock.swift in Sources */,
+				104D67281FECE72200332275 /* ExoplanetClock.swift in Sources */,
 				10E318AE1F2A9A3F0052228E /* AppDelegate.swift in Sources */,
 				10E318CD1F2AB5200052228E /* WeeksViewController.swift in Sources */,
 				10E318C91F2AB5040052228E /* HoursViewController.swift in Sources */,
@@ -337,11 +356,6 @@
 			isa = PBXTargetDependency;
 			target = 106C86061F37A2E100971022 /* TimeVention2PWWatch Extension */;
 			targetProxy = 106C86091F37A2E100971022 /* PBXContainerItemProxy */;
-		};
-		106C86181F37A2E100971022 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 106C85FA1F37A2E000971022 /* TimeVention2PWWatch */;
-			targetProxy = 106C86171F37A2E100971022 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -544,6 +558,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JE9SL2E9G9;
 				INFOPLIST_FILE = TimeVention2PW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "WM-3.TimeVention2PW";
@@ -557,6 +572,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JE9SL2E9G9;
 				INFOPLIST_FILE = TimeVention2PW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "WM-3.TimeVention2PW";
